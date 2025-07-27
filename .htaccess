@@ -1,0 +1,11 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^www\.
+RewriteRule ^(.*)$ https://sdglobalschool.com/$1 [R=301,L]
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule .* - [L]
+RewriteRule ^blog/([0-9a-zA-Z\-]+)$ blog/details.php?blog=$1 [L]
+RewriteRule ^([a-zA-Z0-9_\-]+)$ page.php?PAGE=$1 [L]
+RewriteRule ^sitemap\.xml$ sitemap.php [L]
+RewriteRule ^robots\.txt$ robots.php [L]
+RewriteRule .* https://sdglobalschool.com/404.php [R=301,L]

@@ -1,0 +1,88 @@
+baguetteBox.run("#gallery"),
+  $(document).ready(function () {
+    $("#newmodal").modal("show");
+  }),
+  $(".home-page-slider").owlCarousel({
+    dots: !1,
+    loop: !0,
+    margin: 10,
+    nav: !0,
+    autoplay: !0,
+    responsive: {
+      0: { nav: !1, items: 1 },
+      600: { items: 1 },
+      1024: { items: 1 },
+    },
+  }),
+  $(".education-owl").owlCarousel({
+    dots: !1,
+    loop: !0,
+    margin: 10,
+    nav: !1,
+    autoplay: !0,
+    autoplayTimeout: 3000,
+    responsive: { 0: { items: 2 }, 768: { items: 3 }, 1024: { items: 5 } },
+  }),
+  $(".message-owl").owlCarousel({
+    dots: !1,
+    loop: !0,
+    margin: 0,
+    nav: !1,
+    autoplay: !0,
+    autoplayTimeout: 3000,
+    responsive: {
+      0: { items: 1 },
+      768: { items: 2 },
+      1200: { items: 3, loop: !1 },
+    },
+  }),
+  $(".blog-owl").owlCarousel({
+    dots: !1,
+    loop: !0,
+    margin: 20,
+    nav: !1,
+    autoplay: !0,
+    autoplayTimeout: 3000,
+    responsive: {
+      0: { items: 1 },
+      768: { items: 2 },
+      1024: { items: 3 },
+    },
+  }),
+  $(".social-owl").owlCarousel({
+    dots: !1,
+    loop: !0,
+    margin: 20,
+    nav: !1,
+    autoplay: !0,
+    autoplayTimeout: 3000,
+    responsive: {
+      0: { items: 1 },
+      768: { items: 2 },
+      1024: { items: 3, loop: !1 },
+    },
+  }),
+  $(".testimonial-owl").owlCarousel({
+    dots: !1,
+    loop: !0,
+    margin: 20,
+    nav: !1,
+    autoplay: !0,
+    autoplayTimeout: 3000,
+    responsive: {
+      0: { items: 1 },
+      768: { items: 2 },
+      1024: { items: 3 },
+      1025: { items: 4, loop: 1, nav: !1 },
+    },
+  }),
+  $(".birthday-owl").owlCarousel({
+    dots: !1,
+    loop: !0,
+    margin: 10,
+    nav: !1,
+    autoplay: !0,
+    autoplayTimeout: 3000,
+    responsive: { 0: { items: 1 } },
+  });
+new WOW().init();
